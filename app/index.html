@@ -6,13 +6,11 @@
     <title>Webpack App</title>
 </head>
 
-<body>
-    <div id="loading">
+<body ng-app="ngmodule">
+    <div class="loading">
         <i class="glyphicon glyphicon-refresh"></i>
     </div>
-    <div id="main" style="display: none">
-        <h1 class="text-center">Hello.</h1>
-    </div>
+    <ui-view></ui-view>
 </body>
 
 </html>

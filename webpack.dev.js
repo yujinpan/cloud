@@ -3,10 +3,6 @@ const merge = require('webpack-merge');
 const common = require('./webpack.common.js');
 
 module.exports = merge(common, {
-    // 入口
-    entry: {
-        app: __dirname + '/app/index.js'
-    },
 
     // 开发模式记录错误信息
     devtool: 'inline-source-map',
