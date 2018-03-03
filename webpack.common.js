@@ -6,7 +6,7 @@ module.exports = {
     // 入口
     entry: {
         vendor: ['angular', '@uirouter/angularjs', 'angular-ui-bootstrap'],
-        app: __dirname + '/app/index.js'
+        app: __dirname + '/app/bootstrap/bootstrap.js'
     },
 
     // 输出

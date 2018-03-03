@@ -8,3 +8,5 @@ const NG_MODULE = angular.module('ngmodule', [
     uiRouter, 
     uiBootstrap
 ]);
+
+alert('Hello.');
