@@ -1,10 +1,8 @@
-// 外部依赖
-import angular from 'angular';
-import uiRouter from '@uirouter/angularjs';
-import uiBootstrap from 'angular-ui-bootstrap';
+/**
+ * 这里是根模块，引入子模块
+ */
 
-// 定义主模块
-const NG_MODULE = angular.module('ngmodule', [
-    uiRouter, 
-    uiBootstrap
-]);
+// 子模块
+import '../global/global.module';
+
+alert('Hello world!');

@@ -1,5 +1,9 @@
 /**
- * 应用入口，包含所有模块
+ * 这里是整个应用的入口文件
  */
 
-// 导入所有子模块
+// 引入第三方库
+import 'bootstrap/dist/css/bootstrap.css';
+
+// 引入模块
+import './ngmodule';
