@@ -4,17 +4,21 @@ body {
 }
 
 /* angular load loading */
-#loading {
+@loaderSize: 24px;
+.init-loading {
     position: fixed;
-    width: 30px;
-    height: 30px;
-    line-height: 30px;
-    font-size: 30px;
+    width: @loaderSize;
+    height: @loaderSize;
+    line-height: @loaderSize;
+    font-size: @loaderSize;
     text-align: center;
     top: 50%;
     left: 50%;
-    margin: -15px auto 0 -15px;
+    margin: -12px auto 0 -12px;
     animation: loading 1s linear infinite;
+    >i {
+        top: 0;
+    }
 }
 @keyframes loading {
     100%{transform: rotate(360deg)};
