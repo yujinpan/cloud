@@ -17,7 +17,9 @@ export class AuthService {
      * 如果用户当前已通过身份验证，则返回true，否则返回false
      */
     isAuthenticated() {
-        return !!this.AppConfig.emailAddress;
+        let state = !!this.AppConfig.emailAddress;
+        console.log('认证结果：' + state);
+        return state;
     }
 
     /**

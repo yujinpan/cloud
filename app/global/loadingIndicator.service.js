@@ -6,15 +6,17 @@ export class LoadingIndicatorService {
 
         this.showLoadingIndicator = () => {
             body.append(angular.element(`
-                <div id="spinner">
-                    <i class="fa fa-spinner fa-pulse fa-3x fa-fw" aria-hidden="true"></i>
+                <div id="loading" class="init-loading">
+                    <i class="glyphicon glyphicon-refresh"></i>
                 </div>
             `));
         };
 
         this.hideLoadingIndicator = () => {
-            let spinner = document.getElementById('spinner');
-            spinner.parentElement.removeChild(spinner);
+            setTimeout(() => {
+                let spinner = document.getElementById('loading');
+                spinner.parentElement.removeChild(spinner);
+            }, 400);
         };
     }
 }

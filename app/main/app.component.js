@@ -32,12 +32,15 @@ AuthedController.$inject = ['AppConfig', 'AuthService', '$state'];
 export const app = {
     constroller: AuthedController,
     template: `
-        <div class="navheader">
+        <div ng-if="$ctrl.isAuthenticated" class="navheader">
             <ul>
                 <li>comment</li>
                 <li>user</li>
                 <li>star</li>
             </ul>
+            
+            <button ng-click="logout" type="button" class="btn btn-default">logout</button>
+            
         </div>
         <ui-view></ui-view>
     `
