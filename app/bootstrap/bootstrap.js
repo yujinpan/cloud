@@ -2,8 +2,8 @@
  * 这里是整个应用的入口文件
  */
 
-// 引入第三方库
+// bootstrap.css
 import 'bootstrap/dist/css/bootstrap.css';
 
-// 引入模块
+// 根模块
 import './ngmodule';

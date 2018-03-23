@@ -1,7 +1,7 @@
 /**
- * 这里是根模块，引入子模块
+ * 根模块
  */
-// External
+
 import uiRouter from '@uirouter/angularjs';
 
 // 子模块
